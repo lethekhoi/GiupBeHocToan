@@ -27,6 +27,12 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void button3Click(View view ){
+
+        Intent intent = new Intent(this, PhepToanPhamVi10Activity.class);
+
+        startActivity(intent);
+    }
 
 
 

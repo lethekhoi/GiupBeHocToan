@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhepToanPhamVi10Activity">
+
+    <TextView
+        android:id="@+id/txtSoHang1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="6"
+        android:textSize="90sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSoHang2"
+        android:layout_width="54dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="40dp"
+        android:text="3"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtKetQua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoHang1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtPhepToan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSoHang2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSoHang1"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="406dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKiemTra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/ic_substract" />
+
+    <EditText
+        android:id="@+id/edtKetQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="..."
+        android:textSize="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/btnKiemTra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KIỂM TRA"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtKetQua"
+        app:layout_constraintVertical_bias="0.292" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
