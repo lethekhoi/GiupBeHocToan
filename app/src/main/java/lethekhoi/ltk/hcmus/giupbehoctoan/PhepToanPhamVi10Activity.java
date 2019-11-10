@@ -86,13 +86,13 @@ public class PhepToanPhamVi10Activity extends AppCompatActivity {
                     case 0:
                       thongbao=  (mKQ==mRandomSt1+mRandomSt2)?"Chính xác":"Sai rồi";
                         Log.d("ABC",mRandomSt1 + "+" + mRandomSt2);
-                        //Toast.makeText(PhepToanPhamVi10Activity.this,thongbao,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PhepToanPhamVi10Activity.this,thongbao,Toast.LENGTH_SHORT).show();
                         Log.d("ABC",thongbao);
                         break;
 
                     case 1:
                         thongbao=  (mKQ==mRandomSt1-mRandomSt2)? "Chính xác":"Sai rồi";
-                        //Toast.makeText(PhepToanPhamVi10Activity.this,thongbao,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PhepToanPhamVi10Activity.this,thongbao,Toast.LENGTH_SHORT).show();
                         Log.d("ABC",mRandomSt1 + "-" + mRandomSt2);
                         Log.d("ABC",thongbao);
                         break;
