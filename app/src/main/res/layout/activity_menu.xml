@@ -43,6 +43,7 @@
         <Button
 
             android:text="Cộng trừ trong phạm vi 100"
+            android:onClick="button4Click"
             app:layout_constraintTop_toBottomOf="@id/btn3"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

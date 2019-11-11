@@ -13,11 +13,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-
-
-
-
-
     }
 
 
@@ -33,7 +28,12 @@ public class MenuActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+    public void button4Click(View view ){
 
+        Intent intent = new Intent(this, PhepToanPhamVi100Activity.class);
+
+        startActivity(intent);
+    }
 
 
 }
