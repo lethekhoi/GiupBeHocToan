@@ -11,9 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PhepToanPhamVi100Activity"
+        <activity
+            android:name=".HocSoActivity"
             android:parentActivityName=".MenuActivity"
+
             ></activity>
+        <activity
+            android:name=".PhepToanPhamVi100Activity"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".PhepToanPhamVi10Activity"
             android:parentActivityName=".MenuActivity">

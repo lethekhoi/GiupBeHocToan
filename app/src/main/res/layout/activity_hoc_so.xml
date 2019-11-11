@@ -16,45 +16,18 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/textviewSothu1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:textColor="#ffff"
-                android:textSize="100sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textviewPheptinh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="+"
-                android:textColor="#ffff"
-                android:textSize="100sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textviewSothu2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:textColor="#ffff"
-                android:textSize="100sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgHinh"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/pic" />
 
 
     </LinearLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@null"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3">
@@ -67,12 +40,14 @@
             app:layout_constraintGuide_percent="0.5" />
 
         <ImageButton
-            android:id="@+id/imagebuttonTrue"
+
+            android:background="@null"
+            android:id="@+id/imagebutton1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_true"
+            android:src="@drawable/ic_one"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -81,12 +56,14 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageButton
-            android:id="@+id/imagebuttonFalse"
+
+            android:background="@null"
+            android:id="@+id/imagebutton2"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_delete"
+            android:src="@drawable/ic_two"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/guidlineVertical"
             app:layout_constraintRight_toRightOf="parent"

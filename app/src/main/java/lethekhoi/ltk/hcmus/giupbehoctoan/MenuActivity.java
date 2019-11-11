@@ -16,6 +16,12 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
+    public void button1Click(View view ){
+
+        Intent intent = new Intent(this, HocSoActivity.class);
+
+        startActivity(intent);
+    }
     public void button2Click(View view) {
         Intent intent = new Intent(this, CompareActivity.class);
 
