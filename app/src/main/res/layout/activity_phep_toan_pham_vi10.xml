@@ -13,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:text="6"
         android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/txtSoHang2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +25,11 @@
         android:layout_marginTop="12dp"
         android:text="3"
         android:textSize="90sp"
+        app:layout_constraintBottom_toTopOf="@id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSoHang1" />
+        app:layout_constraintTop_toBottomOf="@id/txtSoHang1" />
 
     <TextView
         android:id="@+id/txtPhepToan"
@@ -35,11 +37,11 @@
         android:layout_height="wrap_content"
         android:text="+"
         android:textSize="90sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtSoHang2"
+        app:layout_constraintBottom_toTopOf="@id/txtSoHang2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSoHang1"
+        app:layout_constraintTop_toBottomOf="@id/txtSoHang1"
         app:layout_constraintVertical_bias="0.477" />
 
     <ImageView
@@ -52,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSoHang2"
+        app:layout_constraintTop_toBottomOf="@id/txtSoHang2"
         app:srcCompat="@drawable/ic_substract" />
 
     <EditText
@@ -65,16 +67,16 @@
         android:textAlignment="center"
         android:text="9"
         android:textSize="90dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnKiemTra"
+        app:layout_constraintBottom_toTopOf="@id/btnKiemTra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
         app:layout_constraintVertical_bias="0.525" />
 
     <Button
         android:id="@+id/btnKiemTra"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="73dp"
         android:layout_marginBottom="80dp"
         android:text="KIỂM TRA"
         android:textSize="40sp"
