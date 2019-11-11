@@ -98,7 +98,14 @@ public class PhepToanPhamVi100Activity extends AppCompatActivity {
                         break;
 
                 }
-                handleRandom();
+                if (thongbao == "Chính xác") {
+                    Log.d("ABC", "handle");
+                    edtKetQua.setText("");
+                    handleRandom();
+                } else {
+                    Log.d("ABC", "return");
+                    return;
+                }
             }
         });
 

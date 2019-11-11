@@ -89,14 +89,13 @@ public class PhepToanPhamVi10Activity extends AppCompatActivity {
                         Log.d("ABC", mRandomSt1 + "+" + mRandomSt2);
                         Toast.makeText(PhepToanPhamVi10Activity.this, thongbao, Toast.LENGTH_SHORT).show();
                         Log.d("ABC", thongbao);
-                        edtKetQua.setText("");
+
 
                         break;
 
                     case 1:
                         thongbao = (mKQ == mRandomSt1 - mRandomSt2) ? "Chính xác" : "Sai rồi";
                         Toast.makeText(PhepToanPhamVi10Activity.this, thongbao, Toast.LENGTH_SHORT).show();
-
                         Log.d("ABC", mRandomSt1 + "-" + mRandomSt2);
                         Log.d("ABC", thongbao);
                         break;
@@ -106,6 +105,7 @@ public class PhepToanPhamVi10Activity extends AppCompatActivity {
 
                 if (thongbao == "Chính xác") {
                     Log.d("ABC", "handle");
+                    edtKetQua.setText("");
                     handleRandom();
                 } else {
                     Log.d("ABC", "return");

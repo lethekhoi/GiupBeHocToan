@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="6"
         android:textSize="90sp"
         app:layout_constraintBottom_toTopOf="@id/txtSoHang2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="9" />
 
     <TextView
         android:id="@+id/txtSoHang2"
@@ -64,8 +64,8 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:textAlignment="center"
         android:text="9"
+        android:textAlignment="center"
         android:textSize="90dp"
         app:layout_constraintBottom_toTopOf="@id/btnKiemTra"
         app:layout_constraintEnd_toEndOf="parent"
