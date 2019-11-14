@@ -17,6 +17,7 @@ public class HocSoActivity extends AppCompatActivity {
     int number;
     ImageView imgViewHinh;
     int[] arrayImage = new int[11];
+    int[] arrayHinh = new int[11];
     Random random;
 
     @Override
@@ -42,6 +43,19 @@ public class HocSoActivity extends AppCompatActivity {
         arrayImage[8] = R.drawable.ic_eight;
         arrayImage[9] = R.drawable.ic_nine;
         arrayImage[10] = R.drawable.ic_eight;
+
+        arrayHinh[1]= R.drawable.one;
+        arrayHinh[2]= R.drawable.two;
+        arrayHinh[3]= R.drawable.three;
+        arrayHinh[4]= R.drawable.four;
+        arrayHinh[5]= R.drawable.five;
+        arrayHinh[6]= R.drawable.six;
+        arrayHinh[7]= R.drawable.seven;
+        arrayHinh[8]= R.drawable.eight;
+        arrayHinh[9]= R.drawable.nine;
+        arrayHinh[10]= R.drawable.eight;
+
+
         random = new Random();
 
     }
@@ -60,13 +74,13 @@ public class HocSoActivity extends AppCompatActivity {
 
             case 0:
 
-                imgViewHinh.setImageResource(arrayImage[number]);
+                imgViewHinh.setImageResource(arrayHinh[number]);
                 imgButton1.setImageResource(arrayImage[number]);
                 imgButton2.setImageResource(arrayImage[number + 1]);
 
                 break;
             case 1:
-                imgViewHinh.setImageResource(arrayImage[number]);
+                imgViewHinh.setImageResource(arrayHinh[number]);
                 imgButton2.setImageResource(arrayImage[number]);
                 imgButton1.setImageResource(arrayImage[number + 1]);
                 break;
