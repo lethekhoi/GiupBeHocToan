@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6C5CE7"
+    android:background="@drawable/caro"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
@@ -17,6 +17,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:background="@null"
             android:id="@+id/imgHinh"
             android:layout_width="300dp"
             android:layout_height="300dp"

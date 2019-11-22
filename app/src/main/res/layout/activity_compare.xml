@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6C5CE7"
+    android:background="@drawable/caro"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".MainActivity">
@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3"
-                android:textColor="#ffff"
+                android:textColor="#1212C9"
                 android:textSize="100sp"
                 android:textStyle="bold" />
 
@@ -35,8 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="+"
-                android:textColor="#ffff"
+                android:text=">"
+                android:textColor="#1212C9"
                 android:textSize="100sp"
                 android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3"
-                android:textColor="#ffff"
+                android:textColor="#1212C9"
                 android:textSize="100sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -67,6 +67,7 @@
             app:layout_constraintGuide_percent="0.5" />
 
         <ImageButton
+            android:background="@null"
             android:id="@+id/imagebuttonTrue"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -81,6 +82,8 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageButton
+
+            android:background="@null"
             android:id="@+id/imagebuttonFalse"
             android:layout_width="0dp"
             android:layout_height="0dp"

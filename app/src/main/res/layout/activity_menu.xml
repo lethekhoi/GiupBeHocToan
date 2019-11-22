@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#05FDE8"
+    android:background="@drawable/background1"
     tools:context=".MenuActivity">
 
     <LinearLayout
@@ -15,9 +15,11 @@
 
 
         <Button
+
             android:id="@+id/btn1"
-            android:layout_width="240dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#FFA350"
             android:onClick="button1Click"
             android:text="Học số"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -25,9 +27,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+
             android:id="@+id/btn2"
-            android:layout_width="240dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#FFD72F"
             android:onClick="button2Click"
             android:text="So Sánh Hai Số"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -36,21 +40,23 @@
 
         <Button
             android:id="@+id/btn3"
-            android:layout_width="240dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#6AB831"
             android:onClick="button3Click"
-            android:text="Cộng trừ trong phạm vi 10"
+            android:text="Cộng trừ phạm vi 10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn2" />
 
         <Button
-
             android:id="@+id/btn4"
-            android:layout_width="240dp"
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#01BEDC"
             android:onClick="button4Click"
-            android:text="Cộng trừ trong phạm vi 100"
+            android:text="Cộng trừ phạm vi 100"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn3" />
