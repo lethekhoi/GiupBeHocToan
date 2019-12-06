@@ -94,12 +94,12 @@ public class CompareActivity extends AppCompatActivity implements View.OnClickLi
         String thongbao = "";
         switch (v.getId()) {
             case R.id.imagebuttonTrue:
-                thongbao = kiemtra ? "chinh xac" : "sai roi";
+                thongbao = kiemtra ? "Chính xác" : "Sai rồi";
                 Toast.makeText(this, thongbao, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.imagebuttonFalse:
 
-                thongbao = !kiemtra ? "Chinh xac" : "Sai roi";
+                thongbao = !kiemtra ? "Chính xác" : "Sai rồi";
                 Toast.makeText(this, thongbao, Toast.LENGTH_SHORT).show();
                 break;
         }
