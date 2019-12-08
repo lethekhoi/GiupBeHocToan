@@ -2,13 +2,16 @@ package lethekhoi.ltk.hcmus.giupbehoctoan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.content.Intent;
-import android.widget.EditText;
+import android.widget.TextView;
+
+import java.lang.reflect.Array;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         final Animation animationScale = AnimationUtils.loadAnimation(this, R.anim.amin_scale);
         final Animation animationAlpha = AnimationUtils.loadAnimation(this, R.anim.amin_alpha);
-
     }
 
     public static final String EXTRA_MESSAGE =

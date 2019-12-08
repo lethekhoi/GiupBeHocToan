@@ -77,34 +77,39 @@ public class PhepToanPhamVi100Activity extends AppCompatActivity {
     private void event() {
         btnKiemTra.setOnClickListener(new View.OnClickListener() {
             String thongbao = "";
+
             @Override
             public void onClick(View view) {
-
-                mKQ = Integer.parseInt(edtKetQua.getText().toString());
-                switch (mIndex) {
-
-                    case 0:
-                        thongbao=  (mKQ==mRandomSt1+mRandomSt2)?"Chính xác":"Sai rồi";
-                        Log.d("ABC",mRandomSt1 + "+" + mRandomSt2);
-                        Toast.makeText(PhepToanPhamVi100Activity.this,thongbao,Toast.LENGTH_SHORT).show();
-                        Log.d("ABC",thongbao);
-                        break;
-
-                    case 1:
-                        thongbao=  (mKQ==mRandomSt1-mRandomSt2)? "Chính xác":"Sai rồi";
-                        Toast.makeText(PhepToanPhamVi100Activity.this,thongbao,Toast.LENGTH_SHORT).show();
-                        Log.d("ABC",mRandomSt1 + "-" + mRandomSt2);
-                        Log.d("ABC",thongbao);
-                        break;
-
-                }
-                if (thongbao == "Chính xác") {
-                    Log.d("ABC", "handle");
-                    edtKetQua.setText("");
-                    handleRandom();
-                } else {
-                    Log.d("ABC", "return");
+                if (edtKetQua.getText().toString().equals("")) {
+                    Toast.makeText(PhepToanPhamVi100Activity.this, "Hãy nhập kết quả", Toast.LENGTH_SHORT).show();
                     return;
+                } else {
+                    mKQ = Integer.parseInt(edtKetQua.getText().toString());
+                    switch (mIndex) {
+
+                        case 0:
+                            thongbao = (mKQ == mRandomSt1 + mRandomSt2) ? "Chính xác" : "Sai rồi";
+                            Log.d("ABC", mRandomSt1 + "+" + mRandomSt2);
+                            Toast.makeText(PhepToanPhamVi100Activity.this, thongbao, Toast.LENGTH_SHORT).show();
+                            Log.d("ABC", thongbao);
+                            break;
+
+                        case 1:
+                            thongbao = (mKQ == mRandomSt1 - mRandomSt2) ? "Chính xác" : "Sai rồi";
+                            Toast.makeText(PhepToanPhamVi100Activity.this, thongbao, Toast.LENGTH_SHORT).show();
+                            Log.d("ABC", mRandomSt1 + "-" + mRandomSt2);
+                            Log.d("ABC", thongbao);
+                            break;
+
+                    }
+                    if (thongbao == "Chính xác") {
+                        Log.d("ABC", "handle");
+                        edtKetQua.setText("");
+                        handleRandom();
+                    } else {
+                        Log.d("ABC", "return");
+                        return;
+                    }
                 }
             }
         });
